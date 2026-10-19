@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import profilePhoto from './assets/profile.jpg'
+import ThreeBackground from './ThreeBackground'
 import {
   Github,
   Linkedin,
@@ -319,7 +320,8 @@ export default function App() {
 
       <main id="top" className="relative mx-auto max-w-6xl px-5 sm:px-8">
         {/* Hero */}
-        <section className="flex min-h-[85vh] flex-col-reverse items-center justify-center gap-12 py-20 text-center lg:flex-row lg:justify-between lg:gap-16 lg:text-left">
+        <section className="relative isolate flex min-h-[85vh] flex-col-reverse items-center justify-center gap-12 py-20 text-center lg:flex-row lg:justify-between lg:gap-16 lg:text-left">
+          <ThreeBackground theme={theme} />
           <div className="flex flex-col items-center lg:items-start">
             <p className="mb-4 animate-fadeUp font-serif text-lg italic text-cyan-600 dark:text-cyan-300">
               {PROFILE.badge}
